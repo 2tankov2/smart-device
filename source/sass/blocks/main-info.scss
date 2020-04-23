@@ -7,7 +7,10 @@
 
 .main-info__wrapper {
   width: 718px;
+  display: flex;
   margin: 100px 0 268px;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .main-info__title {
@@ -25,16 +28,15 @@
   font-size: 22px;
   line-height: 34px;
   padding-left: 97px;
+}
 
-
-  &::before {
-    position: absolute;
-    content: url("../../img/dash.svg");
-    width: 66px;
-    height: 2px;
-    top: -5px;
-    left: 0;
-  }
+.main-info__service::before {
+  position: absolute;
+  content: url("../../img/dash.svg");
+  width: 66px;
+  height: 2px;
+  top: -5px;
+  left: 0;
 }
 
 
@@ -57,17 +59,34 @@
     padding-left: 97px;
     font-size: 18px;
     line-height: 156.8%;
+  }
 
-    &::before {
-      width: 33px;
-    }
+  .main-info__service::before {
+    content: url("../../img/dash-tablet.svg");
+    height: 2px;
+    width: 33px;
   }
 }
 
-/*
-@media (max-width: @mobile-width) {
-  /* Стили для устройств, у которых ширина viewport меньше 768 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов
+@media (max-width: $mobile-width) {
+  .main-info {
+    width: 270px;
+    margin-top: 200px;
+  }
+
+  .main-info__wrapper {
+    width: 100%;
+
+  }
+
+  .main-info__title {
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .main-info__service {
+    font-size: 16px;
+    line-height: 25px;
+    padding-left: 50px;
+  }
 }
-
-
-*/

@@ -59,3 +59,22 @@
     padding: 17px 14px;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .button--advice {
+    width: 287px;
+    font-size: 16px;
+    line-height: 156.8%;
+    margin-left: 0;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "Бесплатная консультация";
+    }
+  }
+
+  .button__text {
+    display: none;
+  }
+}
