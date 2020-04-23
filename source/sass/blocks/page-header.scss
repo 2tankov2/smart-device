@@ -1,0 +1,61 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../img/board.jpg");
+  background-size: 1920px auto;
+  background-color: #1b2d37;
+  color: #ffffff;
+}
+
+.page-header__wrapper {
+  width: 1490px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+.page-header__contacts {
+  width: 700px;
+  display: flex;
+  align-items: center;
+}
+
+.page-header_logo {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    width: 100%;
+    background-image: url("../../img/board-desktop.jpg");
+    background-size: contain;
+  }
+
+  .page-header__wrapper {
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 50px;
+  }
+
+  .page-header__contacts {
+    width: 120px;
+  }
+
+  .page-header_logo {
+    margin-top: 3px;
+  }
+}
+
+/*
+@media (max-width: @mobile-width) {
+  /* Стили для устройств, у которых ширина viewport меньше 768 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов
+}
+
+
+*/

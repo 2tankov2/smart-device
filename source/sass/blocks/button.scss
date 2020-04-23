@@ -1,0 +1,56 @@
+.button {
+  width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 0;
+
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #03b43e;
+    border-color: #dd9206;
+  }
+
+  &:active {
+    color: #03b43e;
+  }
+}
+
+.button--call {
+  width: 180px;
+  border-color: #ffffff;
+  color: #ffffff;
+  padding: 14px 13px;
+  margin-left: 38px;
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.button--advice {
+  width: 407px;
+  background: #00b2ff;
+  color: #ffffff;
+  margin-left: 95px;
+  margin-top: 50px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+
+  padding: 17px 28px;
+}
+
+@media (max-width: $tablet-width) {
+  .button--call {
+    display: none;
+  }
+}

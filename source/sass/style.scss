@@ -1,3 +1,8 @@
-h2 {
-  color: red;
-}
+@import "normalize.scss";
+@import "scaffolding.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/list-contacts.scss";
+@import "blocks/main-info.scss";
+@import "blocks/button.scss";

@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart-Device</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="">
 </head>
 <body>
-  <header class="main-header">
-    <nav class="main-nav">
-      <div>
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/circuit.svg">
-          <h1>Smart Device</h1>
-          <p>умные технологии</p>
-        </a>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" width="300" src="img/logo.svg">
+      </a>
+      <div class="page-header__contacts">
+        <ul class="list-contacts">
+          <li class="list-contacts__mail">
+            <span class="visually-hidden">почта</span>
+            <p class="list-contacts__item">info@sd.ru</p>
+          </li>
+          <li class="list-contacts__tel">
+            <span class="visually-hidden">телефон</span>
+            <p class="list-contacts__item">+7 (495) 000 52 52</p>
+          </li>
+        </ul>
+        <a class="button button--call" href="#modal">Заказать звонок</a>
       </div>
-      <ul class="list-contacts">
-        <li class="list-contacts__item">
-          <span>почта</span>
-          <p>info@sd.ru</p>
-        </li>
-        <li class="list-contacts__item">
-          <span>телефон</span>
-          <p>+7 (495) 000 52 52</p>
-        </li>
-      </ul>
-      <a class="button button--call" href="#modal">Заказать звонок</a>
-    </nav>
-    <div class="main-info">
-      <h1>Печатные платы</h1>
-      <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-      <a class="button button--advice" href="#modal">Получить бесплатно консультацию</a>
+    </div>
+    <div class="page-header__wrapper">
+      <div class="main-info">
+        <h1 class="main-info__title">Печатные платы</h1>
+        <p class="main-info__service">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="button button--advice" href="#modal">Получить бесплатную консультацию</a>
+      </div>
     </div>
   </header>
   <main>

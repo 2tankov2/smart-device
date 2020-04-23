@@ -1,0 +1,63 @@
+.list-contacts {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 18px;
+
+  font-family: "PT Mono", "Arial", monospace;
+  font-size: 16px;
+}
+
+.list-contacts__mail {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../../img/letter.svg");
+    top: 18px;
+    left: -50px;
+  }
+}
+
+.list-contacts__tel {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../../img/phone-call.svg");
+    top: 18px;
+    left: -50px;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .list-contacts {
+    width: 300px;
+  }
+
+  .list-contacts__item {
+    display: none;
+  }
+
+  .list-contacts__mail::before {
+    content: url("../../img/letter1.svg");
+    top: -15px;
+    right: 50px;
+  }
+
+  .list-contacts__tel::before {
+    content: url("../../img/phone-call1.svg");
+    top: -18px;
+    right: 10px;
+  }
+}
+
+/*
+@media (max-width: @mobile-width) {
+  /* Стили для устройств, у которых ширина viewport меньше 768 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов
+}
+
+
+*/
