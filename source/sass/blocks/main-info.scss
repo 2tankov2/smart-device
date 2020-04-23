@@ -1,8 +1,13 @@
 .main-info {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.main-info__wrapper {
   width: 718px;
-  margin-top: 100px;
-  margin-bottom: 268px;
-  margin-left: 25px;
+  margin: 100px 0 268px;
 }
 
 .main-info__title {
@@ -35,6 +40,10 @@
 
 @media (max-width: $tablet-width) {
   .main-info {
+    width: 800px;
+  }
+
+  .main-info__wrapper {
     width: 470px;
   }
 
@@ -42,6 +51,16 @@
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.07em;
+  }
+
+  .main-info__service {
+    padding-left: 97px;
+    font-size: 18px;
+    line-height: 156.8%;
+
+    &::before {
+      width: 33px;
+    }
   }
 }
 
