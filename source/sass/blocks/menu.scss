@@ -20,7 +20,9 @@
 @media (max-width: $mobile-width) {
   .menu__toggle {
     position: absolute;
-    right: 15px;
+    right: 0;
+    top: 0;
+    z-index: 2;
 
     display: block;
     width: 16px;
@@ -32,29 +34,10 @@
     &--opened {
       background-image: url("../../img/icon-menu-open.svg");
       background-repeat: no-repeat;
-      top: 220px;
     }
 
     &--closed {
       background-image: url("../../img/icon-menu-close.svg");
-      top: 210px;
     }
-  }
-
-  .page-footer__menu--closed .menu-list__item {
-    display: none;
-  }
-
-  .page-footer__menu--nojs .menu__toggle {
-    display: none;
-  }
-
-  .page-footer__menu--nojs {
-    position: static;
-    min-height: 0;
-  }
-
-  .page-footer__menu--nojs .menu-list__item {
-    display: block;
   }
 }
