@@ -4,11 +4,27 @@
   justify-content: space-between;
   margin: 0 auto;
   text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
   opacity: 0.5;
+
 }
 
 @media (max-width: $tablet-width) {
   .copyright__item:first-child {
     display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copyright__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
