@@ -6,3 +6,9 @@
   text-transform: uppercase;
   opacity: 0.5;
 }
+
+@media (max-width: $tablet-width) {
+  .copyright__item:first-child {
+    display: none;
+  }
+}

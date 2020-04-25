@@ -106,7 +106,11 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__container">
         <a class="page-footer__logo logo">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="320" alt="Интернет-магазин Smart-Device">
+
+          <picture>
+            <source media="(max-width: 1024px)" srcset="img/logo-footer-tablet.svg">
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="320" alt="Интернет-магазин Smart-Device">
+          </picture>
         </a>
 
         <p class="page-footer__info">1999-2018 sd Service Devices</p>
@@ -142,40 +146,42 @@
         </div>
       </div>
 
-      <div class="page-footer__menu">
-        <h3 class="page-footer__header">Разделы сайта</h3>
+      <div class="page-footer__main-container">
+        <div class="page-footer__menu">
+          <h3 class="page-footer__header">Разделы сайта</h3>
 
-        <button class="menu__toggle menu__toggle--opened" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <button class="menu__toggle menu__toggle--opened" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-        <ul class="footer-list menu__list">
-          <li class="footer-list__item">О компании</li>
-          <li class="footer-list__item">Продукты</li>
-          <li class="footer-list__item">Производство печатных плат</li>
-          <li class="footer-list__item">Монтаж печатных плат</li>
-          <li class="footer-list__item">Комплектующие</li>
-          <li class="footer-list__item">Доставка</li>
-          <li class="footer-list__item">Контакты</li>
-        </ul>
-      </div>
+          <ul class="footer-list menu__list">
+            <li class="footer-list__item">О компании</li>
+            <li class="footer-list__item">Продукты</li>
+            <li class="footer-list__item">Производство печатных плат</li>
+            <li class="footer-list__item">Монтаж печатных плат</li>
+            <li class="footer-list__item">Комплектующие</li>
+            <li class="footer-list__item">Доставка</li>
+            <li class="footer-list__item">Контакты</li>
+          </ul>
+        </div>
 
-      <div class="page-footer__address">
-        <h3 class="page-footer__header">Наш офис</h3>
-        <ul class="footer-list">
-          <li class="footer-list__item">г. Мытищи, Олимпийский проспект, д.10</li>
-          <li class="footer-list__item">+7 (495) 589-40-50</li>
-          <li class="footer-list__item">+7 (925) 003-87-67</li>
-          <li class="footer-list__item">+7 (926) 926-080-79</li>
-        </ul>
+        <div class="page-footer__address">
+          <h3 class="page-footer__header">Наш офис</h3>
+          <ul class="footer-list">
+            <li class="footer-list__item">г. Мытищи, Олимпийский проспект, д.10</li>
+            <li class="footer-list__item">+7 (495) 589-40-50</li>
+            <li class="footer-list__item">+7 (925) 003-87-67</li>
+            <li class="footer-list__item">+7 (926) 926-080-79</li>
+          </ul>
+        </div>
       </div>
     </div>
 
       <div class="page-footer__copyright">
         <ul class="footer-list copyright">
-          <li class="footer-list__item">все права защищены</li>
-          <li class="footer-list__item">Условия конфиденциальности</li>
-          <li class="footer-list__item">Developed by wow studio</li>
+          <li class="copyright__item">все права защищены</li>
+          <li class="copyright__item">Условия конфиденциальности</li>
+          <li class="copyright__item">Developed by wow studio</li>
         </ul>
       </div>
   </footer>
