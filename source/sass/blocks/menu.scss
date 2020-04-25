@@ -1,0 +1,14 @@
+.menu__toggle {
+  display: none;
+  position: absolute;
+  left: 130px;
+  top: 5px;
+}
+
+.menu__list {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
