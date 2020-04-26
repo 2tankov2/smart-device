@@ -1,5 +1,4 @@
 'use strict';
-
 var navMain = document.querySelector('.page-footer__menu');
 var navToggle = document.querySelector('.menu__toggle');
 

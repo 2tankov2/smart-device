@@ -49,6 +49,12 @@
   padding: 17px 28px;
 }
 
+.button--about {
+  border-color: #00b2ff;
+  color: #00b2ff;
+  margin-top: 20px;
+}
+
 @media (max-width: $tablet-width) {
   .button--call {
     display: none;
