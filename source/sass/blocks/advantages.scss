@@ -13,7 +13,8 @@
 
 .advantages__item {
   width: 42%;
-  height: 225px;
+  flex: 1 1 auto;
+  /*height: 225px;*/
   position: relative;
   border: 1px solid #ebebeb;
   border-left: 3px solid #00b2ff;
@@ -26,8 +27,12 @@
       position: absolute;
       width: 29px;
       height: 35px;
-      top: 5px;
-      left: 10px;
+      top: 30px;
+      left: 44px;
+    }
+
+    &:hover::before {
+      content: url("../../img/stopwatch-hover.svg");
     }
   }
 
@@ -37,6 +42,12 @@
       position: absolute;
       width: 35px;
       height: 35px;
+      top: 30px;
+      left: 44px;
+    }
+
+    &:hover::before {
+      content: url("../../img/hired-hover.svg");
     }
   }
 
@@ -46,6 +57,12 @@
       position: absolute;
       width: 36px;
       height: 31px;
+      top: 30px;
+      left: 44px;
+    }
+
+    &:hover::before {
+      content: url("../../img/detective-hover.svg");
     }
   }
 
@@ -55,32 +72,44 @@
       position: absolute;
       width: 35px;
       height: 35px;
+      top: 30px;
+      left: 44px;
     }
-  }
 
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #00b2ff;
-    color: #ffffff;
+    &:hover::before {
+      content: url("../../img/tag-hover.svg");
+    }
   }
 }
 
-.advantages__item-title {
+.advantages__item:hover {
+  background-color: #00b2ff;
+  color: #ffffff;
+}
+
+.advantages__item h3 {
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
   color: #00b2ff;
 }
 
-.advantages__item-title--active {
-  color: #ffffff;
-}
-
-.advantages__item-info {
+.advantages__item p {
   font-family: "PT Mono", "Arial", monospace;
   font-size: 16px;
   line-height: 22px;
+}
+
+.advantages__item:nth-child(n) {
+  background-color: #ffffff;
+  color: #666666;
+  cursor: pointer;
+
+  &:hover,
+  &:hover h3 {
+    background-color: #00b2ff;
+    color: #ffffff;
+  }
 }
 
 .advantages__item:nth-child(2n) {
@@ -91,8 +120,10 @@
   margin-bottom: 30px;
 }
 
-.advantages__item:nth-last-child(-n+3) {
-  background-color: #ffffff;
-  color: #666666;
+@media (max-width: $tablet-width) {
+  .advantages__item {
+    width: 35%;
+    padding-top: 69px;
+    padding-left: 24px;
+  }
 }
-

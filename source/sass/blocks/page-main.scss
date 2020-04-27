@@ -6,7 +6,7 @@
 }
 
 .page-main__wrapper {
-  width: 70%;
+  width: 61%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -16,4 +16,11 @@
 
 .wrapper {
   background-color: #1b2d37;
+}
+
+@media (max-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 93.5%;
+    padding-top: 54px;
+  }
 }

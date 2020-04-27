@@ -6,7 +6,7 @@
   padding: 63px 0 127px;
 }
 
-.products__title {
+.products h2 {
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
@@ -48,9 +48,47 @@
   }
 }
 
-.products__info {
+.products p {
   padding-top: 53px;
   padding-left: 43px;
   padding-right: 200px;
   margin: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .products {
+    width: 93.5%;
+    padding-bottom: 78px;
+    padding-top: 53px;
+  }
+
+  .products__list {
+    flex-direction: column;
+  }
+
+  .products__item {
+    width: 100%;
+    background-size: cover;
+
+    &:first-child {
+      background-image: url("../../img/product1-tablet.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../../img/product2-tablet.png");
+      margin-left: 0;
+      margin-top: 46px;
+    }
+
+    &:last-child {
+      background-image: url("../../img/product3-tablet.png");
+      margin-left: 0;
+      margin-top: 46px;
+    }
+  }
+
+  .products p {
+    padding-top: 43px;
+    padding-right: 500px;
+  }
 }

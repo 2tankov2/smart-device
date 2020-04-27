@@ -4,8 +4,7 @@
   flex-direction: column;
   justify-content: flex-end;
   margin: 0 auto;
-  padding-left: 250px;
-  padding-right: 60px;
+  padding-left: 177px;
   color: #666666;
 
   &::before {
@@ -18,15 +17,38 @@
   }
 }
 
-.about__title {
+.about h2 {
   font-weight: normal;
   font-size: 36px;
   line-height: 51px;
+  margin-top: 0;
 }
 
-.about__info {
+.about p {
   font-family: "PT Mono", "Arial", monospace;
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    &::before {
+      content: url("../../img/2005-tablet.svg");
+      left: 0;
+      top: 10px;
+    }
+  }
+
+  .about h2 {
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .about__info {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
 }

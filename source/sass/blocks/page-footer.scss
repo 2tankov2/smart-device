@@ -63,6 +63,11 @@
   background-position: center;
 }
 
+.footer-wrapper {
+  width: 100%;
+  background-color: #fafafa;
+}
+
 @media (max-width: $tablet-width) {
   .page-footer__container {
     flex-direction: row;
