@@ -21,9 +21,6 @@
   padding-left: 45px;
 
   &:first-child {
-    background-color: #00b2ff;
-    color: #ffffff;
-
     &::before {
       content: url("../../img/stopwatch.svg");
       position: absolute;
@@ -59,6 +56,13 @@
       width: 35px;
       height: 35px;
     }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #00b2ff;
+    color: #ffffff;
   }
 }
 

@@ -55,6 +55,12 @@
   margin-top: 20px;
 }
 
+.button--question {
+  width: 270px;
+  padding: 13px;
+  border-color: #ffffff;
+}
+
 @media (max-width: $tablet-width) {
   .button--call {
     display: none;

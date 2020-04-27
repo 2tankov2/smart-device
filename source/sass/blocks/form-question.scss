@@ -1,0 +1,124 @@
+.form-question__wrapper {
+  width: 61%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 96px auto 113px;
+}
+
+.form-question {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-question h2 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+}
+
+.form-question p {
+  font-family: "PT Mono", "Arial", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 49px;
+}
+
+.form-question__add {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-question__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &:first-child input {
+    width: 40%;
+    height: 50px;
+    flex: 1 1 auto;
+  }
+}
+
+.form-question input,
+.form-question textarea {
+  background-color: #30c1ff;
+  border: none;
+
+  &::placeholder {
+    color: #ffffff;
+    font-family: "PT Mono", "Arial", monospace;
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 17px;
+    padding-top: 14px;
+  }
+}
+
+.form-question__checkbox {
+  display: flex;
+  align-items: center;
+  font-family: "PT Mono", "Arial", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 38px;
+
+  opacity: 0.8;
+}
+
+.form-question__checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.form-question__checkbox label {
+  position: relative;
+  display: inline-block;
+  padding-left: 38px;
+}
+
+.form-question__checkbox label::before,
+.form-question__checkbox label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.form-question__checkbox label::before {
+  height: 16px;
+  width: 16px;
+  border: 1px solid #ffffff;
+  left: 0;
+  top: 3px;
+}
+
+.form-question__checkbox label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 7px;
+}
+
+.form-question__checkbox input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.form-question__checkbox input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+
+.form-question__item input[type=tel] {
+  margin-left: 31px;
+}
+
+.form-question textarea {
+  width: 100%;
+  height: 154px;
+  box-sizing: border-box;
+  margin-bottom: 43px;
+}

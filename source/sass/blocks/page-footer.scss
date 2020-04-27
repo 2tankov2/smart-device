@@ -55,6 +55,14 @@
   padding: 14px 0;
 }
 
+.page-footer__form-question {
+  color: #ffffff;
+  background-image: url("../../img/flight.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-width: $tablet-width) {
   .page-footer__container {
     flex-direction: row;
