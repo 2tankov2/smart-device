@@ -1,5 +1,12 @@
 .wrapper {}
 
+.wrapper--info {
+  background-image: url("../../img/triangles.jpg");
+  background-position: -70px -10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .wrapper--form-question {
   color: #ffffff;
   background-image: url("../../img/flight.png");
@@ -14,6 +21,12 @@
 }
 
 @media (max-width: $tablet-width) {
+  .wrapper--info {
+    background-image: url("../../img/triangles-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   .wrapper--form-question {
     background-image: none;
   }

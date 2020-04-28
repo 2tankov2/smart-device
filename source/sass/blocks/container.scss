@@ -3,6 +3,13 @@
   margin: 0 auto;
 }
 
+.container--info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 109px;
+  padding-bottom: 95px;
+}
+
 .container--features {
   padding: 63px 0 127px;
 }
@@ -20,6 +27,11 @@
     width: 93.5%;
   }
 
+  .container--info {
+    padding-top: 54px;
+    padding-bottom: 75px;
+  }
+
   .container--features {
     padding-bottom: 78px;
     padding-top: 53px;
@@ -33,6 +45,11 @@
 @media (max-width: $mobile-width) {
   .container {
     width: 90.7%;
+  }
+
+  .container--info {
+    padding-top: 37px;
+    padding-bottom: 65px;
   }
 
   .container--features {

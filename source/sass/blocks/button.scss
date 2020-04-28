@@ -7,6 +7,10 @@
   padding: 14px 0;
 
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
 
   background-color: transparent;
   border: 1px solid black;
@@ -30,8 +34,6 @@
   color: #ffffff;
   padding: 14px 13px;
   margin-left: 38px;
-  font-weight: bold;
-  line-height: 16px;
 }
 
 .button--advice {
@@ -41,15 +43,14 @@
   margin-left: 95px;
   margin-top: 50px;
 
-  font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0.05em;
 
   padding: 17px 28px;
 }
 
 .button--about {
+  width: 180px;
   border-color: #00b2ff;
   color: #00b2ff;
   margin-top: 20px;
@@ -93,6 +94,10 @@
 
   .button__text {
     display: none;
+  }
+
+  .button--about {
+    margin-top: 15px;
   }
 
   .button--question {

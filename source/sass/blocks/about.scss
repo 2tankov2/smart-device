@@ -6,15 +6,6 @@
   margin: 0 auto;
   padding-left: 177px;
   color: #666666;
-
-  &::before {
-    content: url("../../img/2005.svg");
-    position: absolute;
-    width: 370px;
-    height: 220px;
-    left: -30px;
-    top: 30px;
-  }
 }
 
 .about h2 {
@@ -29,14 +20,23 @@
   font-size: 16px;
   line-height: 22px;
   margin-top: 0;
+
+  &::before {
+    content: url("../../img/2005.svg");
+    position: absolute;
+    width: 220px;
+    height: 317px;
+    left: -30px;
+    top: 0;
+  }
 }
 
 @media (max-width: $tablet-width) {
-  .about {
+  .about p {
     &::before {
       content: url("../../img/2005-tablet.svg");
       left: 0;
-      top: 10px;
+      top: 0;
     }
   }
 
@@ -50,5 +50,25 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about {
+    padding-left: 0;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    &::before {
+      content: none;
+    }
+  }
+
+  .about__info {
+    -webkit-line-clamp: 8;
   }
 }
