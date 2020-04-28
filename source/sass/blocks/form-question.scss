@@ -26,12 +26,13 @@
 .form-question__item {
   display: flex;
   align-items: center;
+}
 
-  &:first-child input {
-    width: 40%;
-    height: 50px;
-    flex: 1 1 auto;
-  }
+.form-question__item input[type="tel"],
+.form-question__item input[type="text"] {
+  width: 40%;
+  height: 50px;
+  flex: 1 1 auto;
 }
 
 .form-question input,
@@ -50,13 +51,14 @@
 }
 
 .form-question__checkbox {
+  width: 50%;
   display: flex;
   align-items: center;
   font-family: "PT Mono", "Arial", monospace;
   font-size: 14px;
   line-height: 16px;
-  margin-left: 38px;
-
+  margin-left: 28px;
+  flex: 1 1 auto;
   opacity: 0.8;
 }
 
@@ -125,5 +127,43 @@
   .form-question h2 {
     font-size: 32px;
     line-height: 140.62%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form-question {
+    width: 100%;
+  }
+
+  .form-question h2 {
+    font-size: 28px;
+  }
+
+  .form-question p {
+    margin-bottom: 30px;
+  }
+
+  .form-question__item {
+    flex-direction: column;
+  }
+
+  .form-question__item input[type="tel"],
+  .form-question__item input[type="text"] {
+    width: 100%;
+  }
+
+  .form-question__item input[type="tel"] {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .form-question textarea {
+    margin: 30px 0;
+  }
+
+  .form-question__checkbox {
+    width: 100%;
+    margin-left: -20px;
+    margin-top: 30px;
   }
 }

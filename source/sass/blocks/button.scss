@@ -56,9 +56,10 @@
 }
 
 .button--question {
-  width: 270px;
+  width: 47%;
   padding: 13px;
   border-color: #ffffff;
+  flex: 1 1 auto;
 }
 
 @media (max-width: $tablet-width) {
@@ -69,6 +70,10 @@
   .button--advice {
     width: 379px;
     padding: 17px 14px;
+  }
+
+  .button--question {
+    width: 49%;
   }
 }
 
@@ -88,5 +93,9 @@
 
   .button__text {
     display: none;
+  }
+
+  .button--question {
+    width: 100%;
   }
 }
