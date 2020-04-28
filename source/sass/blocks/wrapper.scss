@@ -1,0 +1,14 @@
+.wrapper--form-question {
+  color: #ffffff;
+  background-image: url("../../img/flight.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #00b2ff;
+}
+
+@media (max-width: $tablet-width) {
+  .wrapper--form-question {
+    background-image: none;
+  }
+}

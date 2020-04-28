@@ -1,0 +1,15 @@
+.container--form-question {
+  width: 61%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 113px;
+}
+
+@media (max-width: $tablet-width) {
+  .container--form-question {
+    width: 93.5%;
+    justify-content: center;
+  }
+}
