@@ -1,22 +1,45 @@
+.container {
+  width: 61%;
+  margin: 0 auto;
+}
+
+.container--features {
+  padding: 63px 0 127px;
+}
+
 .container--form-question {
   width: 61%;
   display: flex;
   justify-content: flex-end;
-  margin: 0 auto;
   padding-top: 96px;
   padding-bottom: 113px;
 }
 
 @media (max-width: $tablet-width) {
-  .container--form-question {
+  .container {
     width: 93.5%;
+  }
+
+  .container--features {
+    padding-bottom: 78px;
+    padding-top: 53px;
+  }
+
+  .container--form-question {
     justify-content: center;
   }
 }
 
 @media (max-width: $mobile-width) {
-  .container--form-question {
+  .container {
     width: 90.7%;
+  }
+
+  .container--features {
+    padding-bottom: 64px;
+  }
+
+  .container--form-question {
     padding-top: 33px;
     padding-bottom: 41px;
   }
