@@ -1,10 +1,19 @@
-.wrapper {}
+.wrapper {
+  background-color: #fafafa;
+}
+
+.wrapper--page-header {
+  background-image: url("../../img/board.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1b2d37;
+}
 
 .wrapper--info {
   background-image: url("../../img/triangles.jpg");
-  background-position: -70px -10px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .wrapper--form-question {
@@ -21,6 +30,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .wrapper--page-header {
+    background-image: url("../../img/board-desktop.jpg");
+  }
+
   .wrapper--info {
     background-image: url("../../img/triangles-tablet.jpg");
     background-repeat: no-repeat;
@@ -29,5 +42,11 @@
 
   .wrapper--form-question {
     background-image: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .wrapper--page-header {
+    background-image: url("../../img/board-mobile.jpg");
   }
 }

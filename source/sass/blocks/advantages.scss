@@ -19,71 +19,15 @@
   border-left: 3px solid #00b2ff;
   padding-top: 74px;
   padding-left: 45px;
+  background-color: #ffffff;
+  color: #666666;
+  cursor: pointer;
 
-  &:first-child {
-    &::before {
-      content: url("../../img/stopwatch.svg");
-      position: absolute;
-      width: 29px;
-      height: 35px;
-      top: 30px;
-      left: 44px;
-    }
-
-    &:hover::before {
-      content: url("../../img/stopwatch-hover.svg");
-    }
+  &:hover,
+  &:hover h3 {
+    background-color: #00b2ff;
+    color: #ffffff;
   }
-
-  &:nth-child(2) {
-    &::before {
-      content: url("../../img/hired.svg");
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      top: 30px;
-      left: 44px;
-    }
-
-    &:hover::before {
-      content: url("../../img/hired-hover.svg");
-    }
-  }
-
-  &:nth-child(3) {
-    &::before {
-      content: url("../../img/detective.svg");
-      position: absolute;
-      width: 36px;
-      height: 31px;
-      top: 30px;
-      left: 44px;
-    }
-
-    &:hover::before {
-      content: url("../../img/detective-hover.svg");
-    }
-  }
-
-  &:nth-child(4) {
-    &::before {
-      content: url("../../img/tag.svg");
-      position: absolute;
-      width: 35px;
-      height: 35px;
-      top: 30px;
-      left: 44px;
-    }
-
-    &:hover::before {
-      content: url("../../img/tag-hover.svg");
-    }
-  }
-}
-
-.advantages__item:hover {
-  background-color: #00b2ff;
-  color: #ffffff;
 }
 
 .advantages__item h3 {
@@ -99,18 +43,6 @@
   line-height: 22px;
 }
 
-.advantages__item:nth-child(n) {
-  background-color: #ffffff;
-  color: #666666;
-  cursor: pointer;
-
-  &:hover,
-  &:hover h3 {
-    background-color: #00b2ff;
-    color: #ffffff;
-  }
-}
-
 .advantages__item:nth-child(2n) {
   margin-left: 30px;
 }
@@ -119,10 +51,94 @@
   margin-bottom: 30px;
 }
 
+.advantages__item--stopwatch {
+  &::before {
+    content: url("../../img/stopwatch.svg");
+    position: absolute;
+    width: 29px;
+    height: 35px;
+    top: 30px;
+    left: 44px;
+  }
+
+  &:hover::before {
+    content: url("../../img/stopwatch-hover.svg");
+  }
+}
+
+.advantages__item--hired {
+  &::before {
+    content: url("../../img/hired.svg");
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30px;
+    left: 44px;
+  }
+
+  &:hover::before {
+    content: url("../../img/hired-hover.svg");
+  }
+}
+
+.advantages__item--detective {
+  &::before {
+    content: url("../../img/detective.svg");
+    position: absolute;
+    width: 36px;
+    height: 31px;
+    top: 30px;
+    left: 44px;
+  }
+
+  &:hover::before {
+    content: url("../../img/detective-hover.svg");
+  }
+}
+
+.advantages__item--tag {
+  &::before {
+    content: url("../../img/tag.svg");
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 30px;
+    left: 44px;
+  }
+
+  &:hover::before {
+    content: url("../../img/tag-hover.svg");
+  }
+}
+
 @media (max-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 54px;
+  }
+
   .advantages__item {
     width: 35%;
     padding-top: 69px;
     padding-left: 24px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__item {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .advantages__item h3 {
+    font-size: 20px;
+    line-height: 140.62%;
+  }
+
+  .advantages__item:nth-child(2n) {
+    margin-left: 0;
+  }
+
+  .advantages__item:nth-child(n) {
+    margin-bottom: 20px;
   }
 }

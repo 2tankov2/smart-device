@@ -40,6 +40,13 @@
   background-color: #30c1ff;
   border: none;
 
+  &:hover,
+  &:focus,
+  &active {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
   &::placeholder {
     color: #ffffff;
     font-family: "PT Mono", "Arial", monospace;
@@ -48,6 +55,16 @@
     padding-left: 17px;
     padding-top: 14px;
   }
+}
+
+.form-question input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.form-question textarea::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .form-question__checkbox {

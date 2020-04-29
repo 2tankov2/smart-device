@@ -1,7 +1,7 @@
 .list-contacts {
-  width: 60%;
+  width: 70%;
   display: flex;
-  justify-content: space-between;
+
   list-style: none;
   line-height: 18px;
   padding: 0;
@@ -12,6 +12,7 @@
 
 .list-contacts__mail {
   position: relative;
+flex: 1 1 auto;
 
   &::before {
     position: absolute;
@@ -23,6 +24,8 @@
 
 .list-contacts__tel {
   position: relative;
+  margin-left: 10%;
+  flex: 1 1 auto;
 
   &::before {
     position: absolute;
@@ -45,13 +48,11 @@
   .list-contacts__mail::before {
     content: url("../../img/letter1.svg");
     top: -15px;
-    right: 50px;
   }
 
   .list-contacts__tel::before {
     content: url("../../img/phone-call1.svg");
     top: -18px;
-    right: 10px;
   }
 }
 
