@@ -31,6 +31,14 @@
   padding-bottom: 113px;
 }
 
+.container--page-footer {
+  width: 93.5%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
 @media (max-width: $tablet-width) {
   .container {
     width: 93.5%;
@@ -54,6 +62,12 @@
 
   .container--form-question {
     justify-content: center;
+  }
+
+  .container--page-footer {
+    flex-direction: column;
+    padding-top: 19px;
+    padding-bottom: 10px;
   }
 }
 

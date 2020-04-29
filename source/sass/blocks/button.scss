@@ -45,6 +45,16 @@
   line-height: 19px;
 
   padding: 17px 28px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #355161;
+  }
+
+  &:active {
+    color: #fafafa;
+    background-color: #8d9498;
+  }
 }
 
 .button--about {
@@ -52,6 +62,14 @@
   border-color: #00b2ff;
   color: #00b2ff;
   margin-top: 20px;
+
+  &:hover {
+    color: #ffffff;
+  }
+
+  &:active {
+    color: #ffffff;
+  }
 }
 
 .button--question {
@@ -59,6 +77,14 @@
   padding: 13px;
   border-color: #ffffff;
   flex: 1 1 auto;
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:active {
+    color: #c4baba;
+  }
 }
 
 .button--order-bell {

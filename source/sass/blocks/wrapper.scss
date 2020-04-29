@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: #fafafa;
+  width: 100%;
 }
 
 .wrapper--page-header {
@@ -27,6 +27,10 @@
 
 .wrapper--features {
   background-color: #1b2d37;
+}
+
+.wrapper--page-footer {
+  background-color: #fafafa;
 }
 
 @media (max-width: $tablet-width) {

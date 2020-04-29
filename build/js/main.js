@@ -1,3 +1,4 @@
+/* eslint-disable strict */
 
 /*
 var pageHeader = document.querySelector('.page-header');

@@ -5,6 +5,7 @@
   list-style: none;
   line-height: 18px;
   padding: 0;
+  flex-wrap: wrap;
 
   font-family: "PT Mono", "Arial", monospace;
   font-size: 16px;
@@ -12,7 +13,7 @@
 
 .list-contacts__mail {
   position: relative;
-flex: 1 1 auto;
+  flex: 1 1 auto;
 
   &::before {
     position: absolute;
@@ -39,6 +40,7 @@ flex: 1 1 auto;
 @media (max-width: $tablet-width) {
   .list-contacts {
     width: 300px;
+    margin: 0;
   }
 
   .list-contacts__item {
@@ -48,18 +50,12 @@ flex: 1 1 auto;
   .list-contacts__mail::before {
     content: url("../../img/letter1.svg");
     top: -15px;
+    left: 5px;
   }
 
   .list-contacts__tel::before {
     content: url("../../img/phone-call1.svg");
     top: -18px;
+    left: 10px;
   }
 }
-
-/*
-@media (max-width: @mobile-width) {
-  /* Стили для устройств, у которых ширина viewport меньше 768 пикселей, но больше 770 пикселей. Эти стили подойдут для некоторых мобильных устройств и планшетов
-}
-
-
-*/
