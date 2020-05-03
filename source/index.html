@@ -105,7 +105,7 @@
           <form class="form-question__add" action="#" method="post">
             <div class="form-question__item">
               <input name="name" type="text" placeholder="Имя">
-              <input class="imaskjs__input-tel" name="tel" type="tel" placeholder="Телефон">
+              <input id="imaskjs__input-tel" name="tel" type="tel" placeholder="Телефон">
             </div>
             <textarea name="commit" rows="5" cols="33" placeholder="Ваш вопрос"></textarea>
             <div class="form-question__item">
@@ -219,8 +219,8 @@
         </svg>
       </button>
       <form class="form-question__add" action="#" method="post">
-        <input name="name" type="text" placeholder="Имя">
-        <input class="imaskjs__input-tel-modal" name="tel" type="tel" placeholder="Телефон" maxlength="10">
+        <input id="firstName" name="name" type="text" placeholder="Имя" required>
+        <input id="imaskjs__input-tel-modal" name="tel" type="tel" required placeholder="Телефон" maxlength="16">
         <textarea name="commit" rows="5" cols="33" placeholder="Ваш вопрос"></textarea>
         <button class="button button--order-bell" type="submit" value="Задать вопрос">Задать вопрос</button>
         <div class="form-question__checkbox checkbox">
@@ -232,7 +232,7 @@
   </section>
   <div class="modal modal__overlay"></div>
 
-  <script src="js/main.js"></script>
   <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js"></script>
   </body>
 </html>
