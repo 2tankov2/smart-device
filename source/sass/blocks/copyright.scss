@@ -1,5 +1,5 @@
 .copyright {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -8,10 +8,17 @@
   line-height: 24px;
   letter-spacing: 0.04em;
   opacity: 0.5;
+}
 
+.copyright__item:first-child {
+  margin-right: 38px;
 }
 
 @media (max-width: $tablet-width) {
+  .copyright {
+    flex-direction: column;
+  }
+
   .copyright__item:first-child {
     display: none;
   }

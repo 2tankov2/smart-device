@@ -1,4 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-menu-close" viewBox="0 0 16 16">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.00078125)"/>
+</pattern>
+<clipPath id="clip0">
+<rect x="-1482" y="-2889" width="1920" height="4066" fill="white"/>
+</clipPath>
+</defs><symbol id="icon-link-feature" viewBox="0 0 63 63">
+<rect width="63" height="63" fill="#FAFAFA"/>
+<g clip-path="url(#clip0)">
+<rect x="-1482" y="-2889" width="1920" height="4066" fill="white"/>
+<rect x="-1482" y="-748" width="1920" height="938" fill="#1B2D37"/>
+<g opacity="0.2">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="-307" y="-557" width="370" height="620">
+<rect x="-307" y="-557" width="370" height="620" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="-432" y="-557" width="620" height="620" fill="url(#pattern0)"/>
+</g>
+</g>
+<rect width="63" height="63" fill="#00B2FF"/>
+<path d="M32 35.5L36 31.5L32 27.5" stroke="white" stroke-linejoin="round"/>
+</g>
+
+</symbol><symbol id="icon-menu-close" viewBox="0 0 16 16">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5 7.5V0H7.5V7.5H0V8.5H7.5V16H8.5V8.5H16V7.5H8.5Z" fill="#C4C4C4"/>
 </symbol><symbol id="icon-menu-open" viewBox="0 0 16 2">
 <path d="M0 0.5H16V1.5H0V0.5Z" fill="#C4C4C4"/>

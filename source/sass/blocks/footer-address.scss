@@ -1,0 +1,28 @@
+.footer-address {
+  margin-left: 120px;
+  margin-right: 2px;
+}
+
+.footer-address h3 {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1b2d37;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+@media (max-width: $mobile-width) {
+  .footer-address h3 {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: url("../../img/icon-menu-open.svg");
+      bottom: 5px;
+      right: 0;
+    }
+  }
+}

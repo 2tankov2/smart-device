@@ -31,20 +31,22 @@
   border-color: #ffffff;
   color: #ffffff;
   padding: 14px 13px;
-  margin-left: 38px;
+  margin-top: 3px;
+  margin-left: 26px;
+  height: 45px;
 }
 
 .button--advice {
-  width: 407px;
+  width: 409px;
   background: #00b2ff;
   color: #ffffff;
   margin-left: 95px;
-  margin-top: 50px;
+  margin-top: 21px;
 
   font-size: 16px;
   line-height: 19px;
 
-  padding: 17px 28px;
+  padding: 16px 0 19px;
 
   &:hover {
     color: #ffffff;
@@ -73,7 +75,7 @@
 }
 
 .button--question {
-  width: 47%;
+  width: 49%;
   padding: 13px;
   border-color: #ffffff;
   flex: 1 1 auto;
@@ -103,7 +105,8 @@
   .button--advice {
     width: 379px;
     padding: 17px 14px;
-    margin-left: 47px;
+    margin-left: 51px;
+    margin-top: 36px;
   }
 
   .button--question {

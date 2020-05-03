@@ -1,22 +1,5 @@
 /* eslint-disable strict */
 
-/*
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
-
-pageHeader.classList.remove('page-header--nojs');
-
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
-});
-*/
-
 /* закрытие-открытие меню в подвале */
 var navMain = document.querySelector('.page-footer__menu');
 var navToggle = document.querySelector('.menu__toggle');
@@ -143,3 +126,22 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+/* маска для поля ввода телефонного номера */
+
+var orderPhone = document.querySelector('imaskjs__input-tel');
+var modalPhone = document.getElementById('imaskjs__input-tel-modal');
+
+var maskOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
+// var mask = imask(orderPhone, maskOptions);
+
+// mask.updateOptions({
+//  mask: Number,
+//  scale: 0,      // только целые числа
+//  lazy: false,  // placeholder всегда видимый
+//  placeholderChar: '#',
+//  max: 10
+// });

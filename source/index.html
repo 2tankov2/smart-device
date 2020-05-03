@@ -11,14 +11,13 @@
   <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-  <header>
+  <header class="page-header">
     <div class="wrapper wrapper--page-header">
       <div class="container container--page-header">
-        <div class="page-header">
           <a class="page-header__logo">
             <picture>
               <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo.svg" width="300" alt="Интернет-магазин Smart-Device">
+              <img src="img/logo.svg" width="200" alt="Интернет-магазин Smart-Device">
             </picture>
           </a>
           <div class="page-header__contacts">
@@ -34,15 +33,15 @@
             </ul>
             <a class="contacts-button button button--call" href="#modal">Заказать звонок</a>
           </div>
-        </div>
-
+      </div>
+      <div class="container container--main-screen">
         <div class="main-screen">
           <h1>Печатные платы</h1>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
           <a class="button button--advice" href="#order">
             <span class="button__text">Получить бесплатную консультацию</span>
           </a>
-          <a class="main-screen__scroll" href="#adv">Скрол вниз</a>
+          <a class="main-screen__scroll" href="#adv">Скролл вниз</a>
         </div>
       </div>
     </div>
@@ -55,7 +54,7 @@
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--stopwatch">
               <h3>Оперативные сроки</h3>
-              <p>Усовершенствованная логистическая система позволяет&nbsp;нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              <p>Усовершенствованная логистическая система позволяет&nbsp;нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
             </li>
             <li class="advantages__item advantages__item--hired">
               <h3>Крупные поставщики</h3>
@@ -74,7 +73,7 @@
         <section class="about">
           <h2>О компании</h2>
           <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с&nbsp;1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about__info">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+          <p class="about-info">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД),&nbsp;РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
           <a class="button button--about">Подробнее</a>
         </section>
       </div>
@@ -106,7 +105,7 @@
           <form class="form-question__add" action="#" method="post">
             <div class="form-question__item">
               <input name="name" type="text" placeholder="Имя">
-              <input name="tel" type="tel" placeholder="Телефон">
+              <input class="imaskjs__input-tel" name="tel" type="tel" placeholder="Телефон">
             </div>
             <textarea name="commit" rows="5" cols="33" placeholder="Ваш вопрос"></textarea>
             <div class="form-question__item">
@@ -124,23 +123,23 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer>
     <div class="wrapper wrapper--page-footer">
       <div class="container container--page-footer">
-        <div class="page-footer__aside">
-          <a class="page-footer__logo logo">
+        <div class="footer-aside">
+          <a class="footer-aside__logo">
             <picture>
               <source media="(max-width: 1024px)" srcset="img/logo-footer-tablet.svg">
-              <img class="page-footer__logo-image" src="img/logo-footer.svg" width="320" alt="Интернет-магазин Smart-Device">
+              <img class="footer-aside__logo-image" src="img/logo-footer.svg" width="216" alt="Интернет-магазин Smart-Device">
             </picture>
           </a>
 
-          <p class="page-footer__info">1999-2018 sd Service Devices</p>
+          <p class="footer-aside__info">1999-2018 sd Service Devices</p>
 
-          <div class="page-footer__social">
+          <div class="footer-aside__social">
             <ul class="social-list">
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
+                <a href="#">
                   <span class="visually-hidden">Мы в Фейсбуке</span>
                   <svg class="social-list__facebook" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M27 13.5C27 6.04462 20.9562 0 13.5 0C6.04379 0 0 6.04462 0 13.5C0 20.9562 6.04369 27 13.5 27C20.9562 27 27 20.9563 27 13.5ZM16.8836 9.29395H15.1437C14.6754 9.29395 14.3464 9.69053 14.3464 10.185V10.9604H16.8312L16.4288 13.4772H14.3455V20.2238H11.8025V13.4772H10.115V10.9604H11.8025V9.677H11.8075C11.8523 8.21392 12.3602 6.82092 14.8383 6.73315V6.72388H16.8836V9.29395Z" fill="#CDCDCD"/>
@@ -148,7 +147,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
+                <a href="#">
                   <span class="visually-hidden">Мы в Одноклассниках</span>
                   <svg class="social-list__ok" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.8512 10.957C14.8668 10.957 15.6568 10.1213 15.638 9.2113C15.6568 8.3013 14.8857 7.44702 13.87 7.44702C12.892 7.44702 12.0833 8.22702 12.0833 9.19273C12.0833 10.1584 12.8732 10.957 13.8512 10.957Z" fill="#CDCDCD"/>
@@ -157,7 +156,7 @@
                 </a>
               </li>
               <li class="social-list__item">
-                <a class="social-list__link" href="#">
+                <a href="#">
                   <span class="visually-hidden">Мы в Вконтакте</span>
                   <svg class="social-list__vk" width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19.475 15.1271C18.3662 14.1029 18.287 14.1029 19.2374 12.9211C20.4254 11.4243 22.0095 9.53349 20.5838 9.53349H17.9701C17.4949 9.53349 17.4157 9.84862 17.2573 10.2425C16.6237 11.7394 15.3565 13.709 14.8812 13.3938C14.406 13.0787 14.6436 11.897 14.6436 10.0062C14.7228 9.76984 14.6436 9.53349 14.4852 9.37592C14.3268 9.21836 14.0892 9.06079 13.8516 9.06079C13.4556 8.98201 13.0596 8.90323 12.6636 8.90323C11.1587 8.90323 10.1291 9.53349 10.6835 9.61227C11.7131 9.76984 11.6339 11.9758 11.3963 12.9211C11.0003 14.5756 9.41624 11.6606 8.70342 10.1638C8.62421 9.76984 8.3074 9.53349 7.91139 9.53349H5.85212C5.53531 9.53349 5.2977 9.61227 5.2977 9.84862C5.2977 10.2425 7.27777 14.1029 9.09943 16.0725C10.9211 17.9632 12.7428 17.8057 14.01 17.8057C14.1684 17.8057 14.3268 17.7269 14.406 17.6481C14.4852 17.5693 14.5644 17.4118 14.5644 17.2542C14.5644 15.9937 15.0396 15.3634 15.9109 16.23C16.8613 17.1754 17.0989 17.8057 18.287 17.8057H20.4254C20.9799 17.8057 21.1383 17.6481 21.1383 17.4118C21.2175 16.8603 20.267 15.8361 19.475 15.1271ZM13.8516 0.000789162C21.2175 0.158354 27.0785 6.06705 26.9993 13.2363C26.9201 20.4055 20.8214 26.0778 13.4556 25.9991C6.01052 25.9203 0.0703125 20.1691 0.0703125 12.9999C0.149515 5.75192 6.32733 -0.0779935 13.8516 0.000789162Z" fill="#CDCDCD"/>
@@ -168,27 +167,27 @@
           </div>
         </div>
 
-        <div class="page-footer__main-container">
-          <div class="page-footer__menu page-footer__menu--opened page-footer__menu--nojs">
-            <h3 class="page-footer__header">Разделы сайта</h3>
+        <div class="container container--footer-main">
+          <div class="footer-menu footer-menu--opened footer-menu--nojs">
+            <h3>Разделы сайта</h3>
 
-            <button class="menu__toggle menu__toggle--opened" type="button">
+            <button class="footer-menu__toggle footer-menu__toggle--opened" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
 
-            <ul class="footer-list menu-list">
-              <li class="menu-list__item">О компании</li>
-              <li class="menu-list__item">Продукты</li>
-              <li class="menu-list__item">Производство печатных плат</li>
-              <li class="menu-list__item">Монтаж печатных плат</li>
-              <li class="menu-list__item">Комплектующие</li>
-              <li class="menu-list__item">Доставка</li>
-              <li class="menu-list__item">Контакты</li>
+            <ul class="footer-list footer-list--menu">
+              <li class="footer-list__item">О компании</li>
+              <li class="footer-list__item">Продукты</li>
+              <li class="footer-list__item">Производство печатных плат</li>
+              <li class="footer-list__item">Монтаж печатных плат</li>
+              <li class="footer-list__item">Комплектующие</li>
+              <li class="footer-list__item">Доставка</li>
+              <li class="footer-list__item">Контакты</li>
             </ul>
           </div>
 
-          <div class="page-footer__address">
-            <h3 class="page-footer__header page-footer__header--address">Наш офис</h3>
+          <div class="footer-address">
+            <h3>Наш офис</h3>
             <ul class="footer-list">
               <li class="footer-list__item">г. Мытищи, Олимпийский проспект, д.10</li>
               <li class="footer-list__item">+7 (495) 589-40-50</li>
@@ -199,7 +198,7 @@
         </div>
       </div>
 
-      <div class="page-footer__copyright">
+      <div class="container container--footer-copyright">
         <ul class="footer-list copyright">
           <li class="copyright__item">все права защищены</li>
           <li class="copyright__item">Условия конфиденциальности</li>
@@ -221,7 +220,7 @@
       </button>
       <form class="form-question__add" action="#" method="post">
         <input name="name" type="text" placeholder="Имя">
-        <input name="tel" type="tel" placeholder="Телефон" maxlength="10">
+        <input class="imaskjs__input-tel-modal" name="tel" type="tel" placeholder="Телефон" maxlength="10">
         <textarea name="commit" rows="5" cols="33" placeholder="Ваш вопрос"></textarea>
         <button class="button button--order-bell" type="submit" value="Задать вопрос">Задать вопрос</button>
         <div class="form-question__checkbox checkbox">
@@ -234,5 +233,6 @@
   <div class="modal modal__overlay"></div>
 
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/imask"></script>
   </body>
 </html>

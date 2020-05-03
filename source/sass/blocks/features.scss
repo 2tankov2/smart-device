@@ -9,7 +9,7 @@
   font-size: 36px;
   line-height: 51px;
   color: #ffffff;
-  margin-bottom: 47px;
+  margin-bottom: 51px;
 }
 
 .features__list {
@@ -31,26 +31,36 @@
   background-size: cover;
   background-position: right bottom;
   background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: url("../../img/icon-link-feature.svg");
+    position: absolute;
+    width: 63px;
+    height: 63px;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 .features__list p {
-  padding-top: 53px;
-  padding-left: 43px;
+  padding-top: 50px;
+  padding-left: 44px;
   padding-right: 200px;
   margin: 0;
 }
 
 .features__item-production {
-  background-image: url("../../img/features1.png");
+  background-image: url("../../img/feature1.png");
 }
 
 .features__item-installation {
-  background-image: url("../../img/features2.png");
+  background-image: url("../../img/feature2.png");
   margin-left: 30px;
 }
 
 .features__item-components {
-  background-image: url("../../img/features3.png");
+  background-image: url("../../img/feature3.png");
   margin-left: 30px;
 }
 
@@ -76,17 +86,17 @@
   }
 
   .features__item-production {
-    background-image: url("../../img/features1-tablet.png");
+    background-image: url("../../img/feature1-tablet.png");
   }
 
   .features__item-installation {
-    background-image: url("../../img/features2-tablet.png");
+    background-image: url("../../img/feature2-tablet.png");
     margin-left: 0;
     margin-top: 46px;
   }
 
   .features__item-components {
-    background-image: url("../../img/features3-tablet.png");
+    background-image: url("../../img/feature3-tablet.png");
     margin-left: 0;
     margin-top: 46px;
   }
@@ -103,16 +113,16 @@
   }
 
   .features__item-production {
-    background-image: url("../../img/features1-mobile.png");
+    background-image: url("../../img/feature1-mobile.png");
   }
 
   .features__item-installation {
-    background-image: url("../../img/features2-mobile.png");
+    background-image: url("../../img/feature2-mobile.png");
     margin-top: 30px;
   }
 
   .features__item-components {
-    background-image: url("../../img/features3-mobile.png");
+    background-image: url("../../img/feature3-mobile.png");
     margin-top: 30px;
   }
 }

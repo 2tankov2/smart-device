@@ -1,11 +1,12 @@
 .list-contacts {
-  width: 70%;
+  position: relative;
+  width: 65%;
   display: flex;
 
   list-style: none;
   line-height: 18px;
   padding: 0;
-  flex-wrap: wrap;
+  margin: 2px 0 0 15px;
 
   font-family: "PT Mono", "Arial", monospace;
   font-size: 16px;
@@ -18,21 +19,21 @@
   &::before {
     position: absolute;
     content: url("../../img/letter.svg");
-    top: 18px;
+    top: 17px;
     left: -40px;
   }
 }
 
 .list-contacts__tel {
   position: relative;
-  margin-left: 10%;
+  margin-left: 100px;
   flex: 1 1 auto;
 
   &::before {
     position: absolute;
     content: url("../../img/phone-call.svg");
-    top: 18px;
-    left: -40px;
+    top: 16px;
+    left: -35px;
   }
 }
 
@@ -49,13 +50,13 @@
 
   .list-contacts__mail::before {
     content: url("../../img/letter1.svg");
-    top: -15px;
-    left: 5px;
+    top: 15px;
+    left: 25px;
   }
 
   .list-contacts__tel::before {
     content: url("../../img/phone-call1.svg");
-    top: -18px;
-    left: 10px;
+    top: 12px;
+    left: -21px;
   }
 }

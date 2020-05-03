@@ -5,7 +5,7 @@
   margin: 0;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 250px;
+  padding-top: 225px;
   padding-bottom: 278px;
 }
 
@@ -23,6 +23,7 @@
   font-size: 22px;
   line-height: 34px;
   padding-left: 97px;
+  margin-top: 32px;
 
   &::before {
     position: absolute;
@@ -30,7 +31,7 @@
     width: 66px;
     height: 2px;
     top: -5px;
-    left: 0;
+    left: 3px;
   }
 }
 
@@ -38,8 +39,11 @@
   text-decoration: none;
   position: absolute;
   transform: rotate(-90deg);
-  bottom: 92px;
-  left: -30px;
+  font-family: "PT Mono", "Arial", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  bottom: 129px;
+  left: -35px;
   color: #ffffff;
   opacity: 0.5;
 }
@@ -48,9 +52,9 @@
 @media (max-width: $tablet-width) {
   .main-screen {
     width: 470px;
-    padding-top: 116px;
+    padding-top: 111px;
     padding-bottom: 0;
-    margin-left: 68px;
+    margin-left: 63px;
   }
 
   .main-screen h1 {
@@ -60,12 +64,13 @@
   }
 
   .main-screen p {
-    padding-left: 47px;
+    padding-left: 51px;
     font-size: 18px;
     line-height: 156.8%;
 
     &::before {
       content: url("../../img/dash-tablet.svg");
+      top: -1px;
       width: 33px;
     }
   }
