@@ -1,0 +1,25 @@
+.page-footer {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: 52px;
+    left: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .page-footer::before {
+    bottom: 66px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-footer::before {
+    bottom: 118px;
+  }
+}

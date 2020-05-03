@@ -1,0 +1,22 @@
+@media (max-width: $tablet-width) {
+  .page-main {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e5e5e5;
+      bottom: -98px;
+      left: 0;
+      z-index: 2;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .page-main::before {
+    bottom: -262px;
+  }
+}

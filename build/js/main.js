@@ -1,7 +1,6 @@
-/* eslint-disable strict */
-(function () {
-  'use strict';
+'use strict';
 
+(function () {
   /* обрезание строки до нужной длины */
   var size = 200;
   var aboutInfo = document.querySelector('.about-info');
@@ -139,7 +138,6 @@
   });
 
   /* маска для поля ввода телефонного номера */
-
   var orderPhone = document.getElementById('imaskjs__input-tel');
   var modalPhone = document.getElementById('imaskjs__input-tel-modal');
 
