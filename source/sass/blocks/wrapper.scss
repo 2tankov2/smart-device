@@ -59,5 +59,6 @@
 @media (max-width: $mobile-width) {
   .wrapper--page-header {
     background-image: url("../../img/board-mobile.jpg");
+    background-size: 100%;
   }
 }

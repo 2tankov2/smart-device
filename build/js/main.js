@@ -1,23 +1,33 @@
 /* eslint-disable strict */
 
-/* закрытие-открытие меню в подвале */
-var navMain = document.querySelector('.page-footer__menu');
-var navToggle = document.querySelector('.menu__toggle');
 
-navMain.classList.remove('page-footer__menu--nojs');
+/* обрезание строки до нужной длины */
+var size = 200;
+var aboutInfo = document.querySelector('.about-info');
+var infoText = aboutInfo.textContent;
+
+if ((window.screen.width < 768) && (infoText.length > size)) {
+  aboutInfo.textContent = infoText.slice(0, size) + '..';
+}
+
+/* закрытие-открытие меню в подвале */
+var navMain = document.querySelector('.footer-menu');
+var navToggle = document.querySelector('.footer-menu__toggle');
+
+navMain.classList.remove('footer-menu--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('page-footer__menu--closed')) {
-    navMain.classList.remove('page-footer__menu--closed');
-    navMain.classList.add('page-footer__menu--opened');
+  if (navMain.classList.contains('footer-menu--closed')) {
+    navMain.classList.remove('footer-menu--closed');
+    navMain.classList.add('footer-menu--opened');
 
-    navToggle.classList.remove('menu__toggle--closed');
-    navToggle.classList.add('menu__toggle--opened');
+    navToggle.classList.remove('footer-menu__toggle--closed');
+    navToggle.classList.add('footer-menu__toggle--opened');
   } else {
-    navMain.classList.add('page-footer__menu--closed');
-    navMain.classList.remove('page-footer__menu--opened');
-    navToggle.classList.add('menu__toggle--closed');
-    navToggle.classList.remove('menu__toggle--opened');
+    navMain.classList.add('footer-menu--closed');
+    navMain.classList.remove('footer-menu--opened');
+    navToggle.classList.add('footer-menu__toggle--closed');
+    navToggle.classList.remove('footer-menu__toggle--opened');
   }
 });
 
@@ -127,7 +137,7 @@ window.addEventListener('keydown', function (evt) {
   }
 });
 
-/* маска для поля ввода телефонного номера */
+/* маска для поля ввода телефонного номера
 
 var orderPhone = document.querySelector('imaskjs__input-tel');
 var modalPhone = document.getElementById('imaskjs__input-tel-modal');
@@ -145,3 +155,4 @@ var maskOptions = {
 //  placeholderChar: '#',
 //  max: 10
 // });
+*/

@@ -15,10 +15,6 @@
 }
 
 @media (max-width: $tablet-width) {
-  .copyright {
-    flex-direction: column;
-  }
-
   .copyright__item:first-child {
     display: none;
   }

@@ -37,7 +37,6 @@
   }
 }
 
-
 @media (max-width: $tablet-width) {
   .list-contacts {
     width: 300px;
@@ -58,5 +57,21 @@
     content: url("../../img/phone-call1.svg");
     top: 12px;
     left: -21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .list-contacts__tel {
+    margin: 0;
+  }
+
+  .list-contacts__mail::before {
+    top: 10px;
+    left: 7px;
+  }
+
+  .list-contacts__tel::before {
+    top: 7px;
+    left: 15px;
   }
 }

@@ -24,5 +24,10 @@
   .footer-list--menu {
     height: 100%;
     flex-wrap: nowrap;
+    padding-right: 0;
+  }
+
+  .footer-list--menu li {
+    width: 100%;
   }
 }

@@ -123,7 +123,7 @@
     width: 35%;
     padding-top: 41px;
     padding-left: 24px;
-    padding-right: 25px;
+    padding-right: 20px;
     padding-bottom: 0;
   }
 
@@ -135,12 +135,45 @@
     margin-top: 0;
     margin-bottom: 23px;
   }
+
+  .advantages__item--tag p {
+    margin-bottom: 35px;
+  }
+
+  .advantages__item--stopwatch::before {
+    top: 25px;
+    left: 24px;
+  }
+
+  .advantages__item--hired::before {
+    top: 22px;
+    left: 23px;
+  }
+
+  .advantages__item--detective::before {
+    top: 23px;
+    left: 23px;
+  }
+
+  .advantages__item--tag::before {
+    top: 22px;
+    left: 23px;
+  }
 }
 
 @media (max-width: $mobile-width) {
+  .advantages {
+    margin-bottom: 36px;
+  }
+
   .advantages__item {
     width: 100%;
     margin: 0 auto;
+    padding: 51px 20px 5px 24px;
+  }
+
+  .advantages__item--hired {
+    padding-right: 0;
   }
 
   .advantages__item h3 {
