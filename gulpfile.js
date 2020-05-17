@@ -14,6 +14,7 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var deploy = require("gulp-gh-pages");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -86,7 +87,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source//*.ico"
+    "source/*.ico"
     ], {
       base: "source"
     })
@@ -97,5 +98,10 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("deploy", function () {
+  return gulp.src("./build/**/*")
+    .pipe(deploy());
+});
+
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("build", "server", "deploy"));
