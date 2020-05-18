@@ -12,22 +12,66 @@
 
   /* закрытие-открытие меню в подвале */
   var navMain = document.querySelector('.footer-menu');
-  var navToggle = document.querySelector('.footer-menu__toggle');
+  var navToggle = navMain.querySelector('.footer-menu__toggle');
+  var navAddress = document.querySelector('.footer-address');
+  var navAddressToggle = navAddress.querySelector('.footer-menu__toggle');
+
 
   navMain.classList.remove('footer-menu--nojs');
 
-  navToggle.addEventListener('click', function () {
+  navMain.addEventListener('click', function () {
     if (navMain.classList.contains('footer-menu--closed')) {
       navMain.classList.remove('footer-menu--closed');
       navMain.classList.add('footer-menu--opened');
 
       navToggle.classList.remove('footer-menu__toggle--closed');
       navToggle.classList.add('footer-menu__toggle--opened');
+
+      navAddress.classList.remove('footer-menu--opened');
+      navAddress.classList.add('footer-menu--closed');
+
+      navAddressToggle.classList.remove('footer-menu__toggle--opened');
+      navAddressToggle.classList.add('footer-menu__toggle--closed');
     } else {
       navMain.classList.add('footer-menu--closed');
       navMain.classList.remove('footer-menu--opened');
       navToggle.classList.add('footer-menu__toggle--closed');
       navToggle.classList.remove('footer-menu__toggle--opened');
+
+      navAddress.classList.remove('footer-menu--closed');
+      navAddress.classList.add('footer-menu--opened');
+
+      navAddressToggle.classList.remove('footer-menu__toggle--closed');
+      navAddressToggle.classList.add('footer-menu__toggle--opened');
+    }
+  });
+
+  navAddress.classList.remove('footer-menu--nojs');
+
+  navAddress.addEventListener('click', function () {
+    if (navAddress.classList.contains('footer-menu--closed')) {
+      navAddress.classList.remove('footer-menu--closed');
+      navAddress.classList.add('footer-menu--opened');
+
+      navAddressToggle.classList.remove('footer-menu__toggle--closed');
+      navAddressToggle.classList.add('footer-menu__toggle--opened');
+
+      navMain.classList.remove('footer-menu--opened');
+      navMain.classList.add('footer-menu--closed');
+
+      navToggle.classList.remove('footer-menu__toggle--opened');
+      navToggle.classList.add('footer-menu__toggle--closed');
+    } else {
+      navAddress.classList.add('footer-menu--closed');
+      navAddress.classList.remove('footer-menu--opened');
+      navAddressToggle.classList.add('footer-menu__toggle--closed');
+      navAddressToggle.classList.remove('footer-menu__toggle--opened');
+
+      navMain.classList.remove('footer-menu--closed');
+      navMain.classList.add('footer-menu--opened');
+
+      navToggle.classList.remove('footer-menu__toggle--closed');
+      navToggle.classList.add('footer-menu__toggle--opened');
     }
   });
 
