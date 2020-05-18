@@ -25,17 +25,20 @@
   .footer-address {
     margin-left: 0;
     margin-top: 28px;
+    position: relative;
+  }
+
+  .footer-address::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 1px;
+    background-color: #e5e5e5;
+    top: -25px;
+    left: -15px;
   }
 
   .footer-address h3 {
-    position: relative;
     margin-bottom: 30px;
-
-    &::after {
-      position: absolute;
-      content: url("../../img/icon-menu-open.svg");
-      bottom: 5px;
-      right: 0;
-    }
   }
 }

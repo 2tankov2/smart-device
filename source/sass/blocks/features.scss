@@ -19,6 +19,7 @@
   display: flex;
   font-size: 20px;
   line-height: 30px;
+  flex-wrap: wrap;
 }
 
 .features__list a {
@@ -27,6 +28,8 @@
   flex: 1 1 auto;
   text-decoration: none;
   color: #ffffff;
+  margin-left: 30px;
+  margin-bottom: 30px;
 
   background-size: cover;
   background-position: right bottom;
@@ -43,6 +46,10 @@
   }
 }
 
+.features__list a:nth-child(3n+1) {
+  margin-left: 0;
+}
+
 .features__list p {
   padding-top: 50px;
   padding-left: 44px;
@@ -56,12 +63,10 @@
 
 .features__item-installation {
   background-image: url("../../img/feature2.png");
-  margin-left: 30px;
 }
 
 .features__item-components {
   background-image: url("../../img/feature3.png");
-  margin-left: 30px;
 }
 
 @media (max-width: $tablet-width) {
@@ -84,6 +89,10 @@
   .features__list p {
     padding-top: 42px;
     padding-right: 500px;
+  }
+
+  .features__list a:nth-child(n) {
+    margin-left: 0;
   }
 
   .features__item-production {

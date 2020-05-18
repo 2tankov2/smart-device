@@ -16,6 +16,7 @@
   border: 1px solid black;
   border-radius: 5px;
   box-sizing: border-box;
+  outline: none;
 
   &:hover {
     background-color: #00b2ff;
@@ -64,6 +65,7 @@
   border-color: #00b2ff;
   color: #00b2ff;
   margin-top: 20px;
+  cursor: pointer;
 
   &:hover {
     color: #ffffff;

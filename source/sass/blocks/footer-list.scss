@@ -20,6 +20,16 @@
   width: 60%;
 }
 
+.footer-list a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    color: #00b2ff;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .footer-list--menu {
     height: 100%;

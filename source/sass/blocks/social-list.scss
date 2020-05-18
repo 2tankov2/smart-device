@@ -6,3 +6,15 @@
   padding: 0;
   margin: 0;
 }
+
+.social-list__item {
+  padding-left: 5px;
+}
+
+.social-list__item:first-child {
+  padding-left: 0;
+}
+
+.social-list__item svg path:hover {
+  fill: #00b2ff;
+}

@@ -14,7 +14,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore")
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-var deploy = require("gulp-gh-pages");
+var ghPages = require("gulp-gh-pages");
+var urlAdjuster = require("gulp-css-replace-url");
 var del = require("del");
 
 gulp.task("css", function () {
@@ -24,6 +25,9 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
+    .pipe(urlAdjuster({
+      replace:  ["../../img/", "../img/"],
+    }))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -56,9 +60,7 @@ gulp.task("images", function() {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-
     .pipe(gulp.dest("source/img"));
-
 });
 
 gulp.task("webp", function () {
@@ -100,8 +102,8 @@ gulp.task("clean", function () {
 
 gulp.task("deploy", function () {
   return gulp.src("./build/**/*")
-    .pipe(deploy());
+    .pipe(ghPages());
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server", "deploy"));
+gulp.task("start", gulp.series("build", "server"));
